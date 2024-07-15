@@ -1,0 +1,145 @@
+.artikel {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.artikel > .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.artikel-list {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+.template-artikel:nth-child(odd) {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.template-artikel:nth-child(even) {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  
+  .template-artikel-image-wrapper {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .template-artikel-content {
+    text-align: right;
+  }
+  
+}
+
+.template-artikel-image-wrapper {
+  width: 45%;
+  height: auto;
+  max-height: 400px;
+  background: radial-gradient(50% 50% at 50% 50%, #B2C1E5 0%, #8CA2E5 100%);
+  border-radius: 10px;
+}
+
+.template-artikel-image-wrapper > img {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.template-artikel-content {
+  width: 50%;
+  height: auto;
+}
+
+.template-artikel-content.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.template-artikel-content.description {
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .artikel {
+    text-align: center;
+  }
+  
+  .template-aritkel {
+    display: block;
+    text-align: center;
+  }
+
+  .template-artikel-image-wrapper {
+    width: 100%;
+    height: 25%;
+    max-height: 220px;
+    text-align: left;
+    background: transparent;
+  }
+
+  .template-artikel-image-wrapper > img {
+    max-height: 220px;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .template-artikel:nth-child(odd) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+  }
+  
+  .template-artikel:nth-child(even) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    -webkit-box-ordinal-group: unset;
+    -moz-box-ordinal-group: unset;
+    -ms-flex-order: unset;
+    -webkit-order: unset;
+    order: unset;
+  }
+
+  .template-artikel-content {
+    width: 100%;
+    text-align: unset !important;
+    display: block;
+  }
+  
+  .template-artikel-content.title {
+    text-align: center !important;
+    font-size: 24px;
+    text-wrap: balance;
+    line-height: 26px;
+    padding: 10px 0;
+  }
+
+  .template-artikel-content.description {
+    text-align: left !important;
+    font-size: 18px;
+    text-wrap: balance;
+  }
+}

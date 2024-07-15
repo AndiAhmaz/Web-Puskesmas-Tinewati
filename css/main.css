@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik One');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d5fbfe;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 1000vh; */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.black {
+  color: transparent;
+  -webkit-text-fill-color: black;
+  background: transparent;
+}
+
+.body {
+  margin: 75px 0 0 0;
+}
+
+.body li {
+  margin: 50px 0;
+}
+
+.introduction.title {
+  font-size: 36px;
+  line-height: 44px;
+  color: black;
+}
+
+.introduction ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction ul li {
+  margin: 0;
+  width: 50%;
+}
+
+.introduction img {
+  width: 100%;
+}
+
+.introduction.description {
+  display: inline-block;
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+
+.introduction.description.desc {
+  padding: 25px 0 0 0;
+  font-size: 20px;
+}
+
+.introduction.description li {
+  width: 100%;
+}
+
+.body ul li:has(div):has(.dokter-list) {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.facility-button {
+  margin: 200px 0;
+  width: 100%;
+  height: 305px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: rgba(140, 162, 229, .5);
+  position: relative;
+}
+
+.facility-button img {
+  width: 100%;
+  height: auto;
+  transform: translateY(-30%);
+  filter: blur(5px) brightness(0.5);
+  opacity: 0.6;
+}
+
+.facility-button div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.no-show {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  flex: 1;
+}
+
+.mobile {
+  display: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .no-mobile {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .body {
+    margin: 100px 0 0 0;
+  }
+
+  .introduction {
+    text-align: center;
+  }
+
+  .introduction.title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .introduction ul {
+    display: block;
+  }
+
+  .introduction ul li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .introduction.description {
+    padding: 0;
+  }
+
+  .introduction.description.desc {
+    padding: 0;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .body > ul > li:has(div):has(.dokter-list) {
+    display: block;
+  }
+
+  .dokter-list {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .dokter-list > ul {
+    justify-content: space-evenly;
+  }
+  
+  .facility-button {
+    margin: 100px 0;
+    height: 163px;
+    border-radius: 10px;
+  }
+
+  .facility-button img {
+    transform: none;
+    filter: blur(2px) brightness(0.5);
+    height: 100%;
+  }
+
+  .facility-button div {
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+}

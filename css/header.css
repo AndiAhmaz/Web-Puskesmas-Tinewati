@@ -1,0 +1,262 @@
+.top-page-info {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-page ul {
+  position: relative;
+  top: 100px;
+}
+
+.top-page li {
+  display: list-item;
+  margin: 0 20px 0 0;
+}
+
+.top-page img {
+  padding: 25px;
+  min-width: 40%;
+}
+
+.top-page-title {
+  font-size: 64px;
+  line-height: 78px;
+  background: linear-gradient(91.57deg, #7788C3 -1.02%, #A9B4D8 36.25%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.top-page-description {
+  font-size: 20px;
+}
+
+.top-page-contact {
+  width: 100%;
+  min-height: 75px;
+  max-height: 150px;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(169,180,216,1) 0%, rgba(168,179,215,1) 100%);
+}
+
+.top-page-contact ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+  height: 150px;
+  padding: 0 10px 0 10px;
+}
+
+.top-page-contact li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: list-item;
+}
+
+.top-page-contact li a{
+  padding: 0;
+  color: black;
+  display: inline-table;
+  text-align: center;
+  width: 100%;
+}
+
+.top-page-contact li a ul {
+  position: unset;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.top-page-contact img {
+  height: 60%;
+  max-width: 50%;
+  min-width: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    top: 100px;
+    text-align: center;
+  }
+
+  .no-mobile {
+    display: none;
+    margin: 0;
+  }
+
+  .top-page {
+    display: inline;
+    min-height: 250px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-page-info {
+    display: block;
+  }
+
+  .top-page ul {
+    top: 0;
+  }
+
+  .top-page li {
+    margin: 0;
+  }
+  
+  .top-page img {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .top-page-title {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .top-page-description.mobile {
+    display: flex;
+  }
+
+  .top-page-contact.mobile {
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    min-height: 75px;
+    max-height: 250px;
+    border-radius: 20px;
+    background: radial-gradient(circle, rgba(169,180,216,1) 0%, rgba(168,179,215,1) 100%);
+  }
+
+  .info-show-item {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-show-prev {
+    width: 12.5%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+  }
+
+  .info-show-next {
+    width: 12.5%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+  }
+  
+  .info-item1 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    color: black;
+  }
+
+  .info-item1 ul {
+    display: inline-block;
+    position: unset;
+    padding: 20px 0 20px 0;
+    height: 50%;
+  }
+
+  .info-item1 lu li {
+    display: list-item;
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+  .info-item1 img {
+    height: 40%;
+    width: 20%;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .info-item1.no-show {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .info-item2 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    color: black;
+  }
+
+  .info-item2 ul {
+    display: inline-block;
+    position: unset;
+    padding: 20px 0 20px 0;
+    height: 50%;
+  }
+
+  .info-item2 lu li {
+    display: list-item;
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+  .info-item2 img {
+    height: 60%;
+    width: 20%;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .info-item2.no-show {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .info-item3 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    color: black;
+  }
+
+  .info-item3 ul {
+    display: inline-block;
+    position: unset;
+    padding: 20px 0 20px 0;
+    height: 50%;
+  }
+
+  .info-item3 lu li {
+    display: list-item;
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+  .info-item3 img {
+    height: 60%;
+    width: 20%;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .info-item3.no-show {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+}

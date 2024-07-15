@@ -1,0 +1,38 @@
+.logo-pemerintah {
+  text-align: center;
+}
+
+.logo-pemerintah img {
+  padding: 10px 20px 40px 20px;
+}
+
+@media (max-width: 768px) {
+  .logo-pemerintah.mobile {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .logo-pemerintah.mobile ul {
+    list-style: none;
+    display: flex;
+    overflow: auto;
+    overflow-y: hidden;
+    max-height: 250px;
+  }
+
+  .logo-pemerintah.mobile ul li {
+    height: 170px;
+    flex: 0 0 auto;
+    max-height: 250px;
+  }
+
+  .logo-pemerintah.mobile ul li img{
+    display: block;
+    height:100vh;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

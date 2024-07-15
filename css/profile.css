@@ -1,0 +1,158 @@
+body {
+  padding: 0;
+}
+
+.VisiMisi {
+  display: flex;
+  padding: 50px;
+}
+
+.VisiMisi > div > b {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 20px 0;
+}
+
+.VisiMisi > div > p, .VisiMisi > div > ol > li {
+  width: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.Visi > p {
+  padding: 20px 0;
+}
+
+.Misi > ol {
+  padding: 20px 0;
+}
+
+.Misi > ol > li {
+  list-style: auto;
+}
+
+.background-gradient {
+  background: linear-gradient(0deg, rgba(235,232,228,1) 0%, rgba(178,193,229,1) 40%);
+  padding: 75px 0;
+}
+
+.Nilai {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.Nilai > div {
+  display: grid;
+  text-align: center;
+  position: relative;
+  width: 20%;
+}
+
+.Nilai > div:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  right: -80%;
+  top: 60px;
+  width: 100%;
+  border-bottom: 3px dotted black;
+}
+
+.Nilai > div > img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Nilai > div > b {
+  width: 100%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.Nilai > div p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.Nilai > div > div {
+  text-align: left;
+  width: 25%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.devider {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.devider > b {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 75px;
+}
+
+.struktur {
+  width: 100%;
+  height: auto;
+  display: grid;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.struktur.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.struktur img {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .VisiMisi {
+    display: block;
+  }
+
+  .Nilai {
+    display: block;
+  }
+
+  .Nilai > div {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .Nilai > div > div {
+    width: 20%;
+  }
+  
+  .Nilai > div::before {
+    border: unset !important;
+  }
+
+  .devider {
+    width: 100%;
+    height: 50px;
+  }
+
+  .devider > b {
+    display: none;
+  }
+
+  .struktur img {
+    width: 100%;
+    padding: 20px 0;
+  }
+}

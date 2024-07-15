@@ -1,0 +1,127 @@
+.dokter-list ul {
+  position: relative;
+  display: flex;
+  top: 25px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.dokter-list ul::-webkit-scrollbar {
+  /* display: none; */
+}
+
+.dokter-list ul li {
+  padding: 0 25px;
+}
+
+.dokter-list.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.template-doctor {
+  width: 310px;
+  height: 350px;
+  background: radial-gradient(50% 50% at 50% 50%, #B2C1E5 0%, #8CA2E5 100%);
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.template-doctor-image-wrapper {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  width: 218px;
+  height: 221px;
+  background-color: #C0C0C0;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flow-root;
+}
+
+.template-doctor-image-wrapper img {
+  width: 110%;
+  height: 125%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -10px;
+}
+
+/* .template-doctor-jabatan {
+  position: relative;
+  display: flow-root;
+  width: 100%;
+  height: 5px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 29px;
+  font-size: 24px;
+  top: 40px
+} */
+
+.template-doctor-nama {
+  position: relative;
+  display: flow-root;
+  width: 95%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  top: 40px;
+  text-wrap: balance;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .dokter-list {
+    text-align: center;
+  }
+  
+  .dokter-list.title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .dokter-list ul {
+    top: 20px;
+    overflow: auto;
+    overflow-y: hidden;
+    justify-content: space-between;
+  }
+
+  .dokter-list ul li {
+    margin: 0;
+    flex: 0 0 auto;
+    padding: 0 15px;
+  }
+
+  .template-doctor {
+    width: 155px;
+    height: 175px;
+    background: radial-gradient(50% 50% at 50% 50%, #B2C1E5 0%, #8CA2E5 100%);
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .template-doctor-image-wrapper {
+    width: 109px;
+    height: 110px;
+  }
+  
+  .template-doctor-nama {
+    font-size: 16px;
+    line-height: 16px;
+    top: 20px;
+    word-wrap: break-all;
+    display: inline-block; 
+  }
+}
